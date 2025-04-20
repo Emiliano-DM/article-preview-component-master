@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  background-color: hsl(210, 46%, 95%);
 }
 
 main {
@@ -16,11 +17,91 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 10%;
 }
 
 
+#card {
+  border-radius: 10px;
+  background-color: white;
+  font-family: Manrope;
+}
 
+#drawers-wrapper {
+  width: 100%;
+  aspect-ratio: 6 / 4;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  margin-bottom: 7vw;
+}
+
+#drawers-wrapper>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#card h1{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+#card p {
+  color: hsl(214, 17%, 51%);
+  font-weight: 500;
+}
+
+#card-content {
+  padding: 0 10%;
+}
+
+#card-content > h1 {
+  font-size: 4vw;
+  margin-bottom: 3vw;
+}
+
+#card-content > p {
+  font-size: 3.25vw;
+  margin-bottom: 5vw;
+  line-height: 1.5;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5vw;
+}
+
+footer img{
+  border-radius: 50%;
+}
+
+footer img:first-of-type {
+  width: 10vw;
+  height: 10vw;
+  margin-right: 15px;
+}
+
+#footer-info {
+  margin-right: auto;
+}
+
+#footer-info h1 {
+  font-size: 2vw;
+}
+
+#footer-info p {
+  font-size: 1.7vw;
+}
+
+#share-button {
+  background-color: hsl(210, 46%, 95%);
+  width: 7vw;
+  height: 7vw;
+  padding: 2vw;
+}
 
 
 .attribution {
