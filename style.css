@@ -53,7 +53,7 @@ main {
 }
 
 #card-content {
-  padding: 0 10%;
+  padding: 0 8vw;
 }
 
 #card-content > h1 {
@@ -71,21 +71,38 @@ footer {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 5vw;
+  position: relative;
 }
 
 footer img{
   border-radius: 50%;
 }
 
-footer img:first-of-type {
-  width: 10vw;
-  height: 10vw;
-  margin-right: 15px;
+#footer-content {
+  flex-grow: 1;
+  padding: 0 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5vw;
 }
 
-#footer-info {
-  margin-right: auto;
+
+
+#share-menu {
+  display: flex;
+  gap: 3vw;
+}
+
+#personal-data {
+  display: flex;
+  align-items: center;
+}
+
+#personal-data img{
+  width: 10vw;
+  height: 10vw;
+  margin-right: 2vw;
 }
 
 #footer-info h1 {
@@ -103,6 +120,17 @@ footer img:first-of-type {
   padding: 2vw;
 }
 
+footer.active {
+  background-color: hsl(217, 19%, 35%);
+}
+
+
+
+footer div.desactive {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 
 .attribution {
 font-size: 11px;
